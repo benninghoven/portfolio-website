@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --background1: #000000;
+    --background2: #0C1821;
+    --accent1: #1B2A41;
+    --accent2: #324A5F;
+    --text: #FFFFFF;
+}
+
+
+body {
+
+    background: var(--background1);
+    color: var(--text);
+
+    margin: 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+a:link {
+    color: var(--text);
+    background-color: transparent;
+    text-decoration: none;
+} 
+
+a:visited {
+    color: var(--text);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent2);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--text);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid var(--accent2);
+}
+
+.nvarbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background2);
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a { 
+    display: block;
+    color: var(--text);
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: var(--accent2);
+}
+
+
+/* profile */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 30rem;
+}
+
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    border-width: 1px;
+    border-color: red;
+
+    width: 20rem;
+    height: 15rem;
+}
+
+.project h1 {
+    height: 20%;
+    margin: 0;
+    text-align: center;
+}
+
+.project img {
+    height: 80%;
+    width: 90%;
+    border-radius: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
