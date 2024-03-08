@@ -2,18 +2,20 @@
 
 
 :root {
-    --background1: #000000;
-    --background2: #0C1821;
-    --accent1: #1B2A41;
-    --accent2: #324A5F;
-    --text: #FFFFFF;
+    --background1: #151922;
+    --background2: #20252E;
+    --accent1: #162034;
+    --accent2: #1d2b4;
+    --accent3: #183446;
+    --text_primary: #FFFFFF;
+    --text_secondary: #FFF000;
 }
 
 
 body {
 
     background: var(--background1);
-    color: var(--text);
+    color: var(--text_primary);
 
     margin: 0;
 
@@ -26,13 +28,13 @@ body {
 
 
 a:link {
-    color: var(--text);
+    color: var(--text_primary);
     background-color: transparent;
     text-decoration: none;
 } 
 
 a:visited {
-    color: var(--text);
+    color: var(--text_primary);
     background-color: transparent;
     text-decoration: none;
 }
@@ -44,7 +46,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--text);
+    color: var(--text_primary);
     background-color: transparent;
     text-decoration: none;
 }
@@ -53,17 +55,19 @@ hr {
     border-top: 1px solid var(--accent2);
 }
 
-.nvarbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: var(--background2);
+
+    z-index: 256;
 }
 
 .navbar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: var(--background2);
     overflow: hidden;
 }
 
@@ -73,13 +77,14 @@ hr {
 
 .navbar a { 
     display: block;
-    color: var(--text);
+    color: var(--text_primary);
     padding: 1rem 1rem;
     text-decoration: none;
 }
 .navbar a:hover {
     background-color: var(--accent2);
 }
+
 
 
 /* profile */
@@ -91,35 +96,84 @@ hr {
     width: 30rem;
 }
 
+/* =-=-=-=-=-=-=-= PROJECT =-=-=-=-=-=-=-= */
 
 .project-container {
-    display: flex;
+    display: inline-flex;
+    margin: 10% 10%;
+    max-width: 90%;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .project {
-    border-width: 1px;
-    border-color: red;
-
-    width: 20rem;
-    height: 15rem;
-}
-
-.project h1 {
-    height: 20%;
-    margin: 0;
-    text-align: center;
+    margin: 5px;
+    width: 45rem;
+    height: 35rem;
 }
 
 .project img {
-    height: 80%;
-    width: 90%;
-    border-radius: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
+    height: 70%;
+    width: 100%;
+
+    object-fit: cover;
+    margin: 0;
+
+
+    display: block;
+
+
+    border-radius: .3em;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    transition: filter 0.25s ease-in-out, -webkit-filter 0.25s ease-in-out, border-bottom 0.4s ease-in-out;
+
+    cursor: pointer;
 }
 
+.project img:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
+.project img.clicked + p {
+    border-bottom-color: white; /* Change the color as needed */
+}
+
+
+.project h1 {
+    margin: 0;
+
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--text_primary);
+
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.project a {
+    color: var(--text_seconday);
+    text-align: left;
+    vertical-align: middle;
+    font-size: .9em;
+
+}
+
+.project p {
+    height: 15%;
+    font-size: 1.1rem;
+}
+
+
+
+.thicc {
+    height: 1000px
+}
 
 
 footer {
