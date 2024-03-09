@@ -56,6 +56,7 @@ hr {
 }
 
 .navbar {
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -80,6 +81,8 @@ hr {
     color: var(--text_primary);
     padding: 1rem 1rem;
     text-decoration: none;
+
+    height: 2rem;
 }
 .navbar a:hover {
     background-color: var(--accent2);
@@ -99,36 +102,43 @@ hr {
 /* =-=-=-=-=-=-=-= PROJECT =-=-=-=-=-=-=-= */
 
 .project-container {
+
     display: inline-flex;
-    margin: 10% 10%;
-    max-width: 90%;
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: center;
+
+    margin-top: 2rem;
+    padding-top: 5rem;
+
 }
 
 .project {
+
+
     margin: 5px;
-    width: 45rem;
-    height: 35rem;
+
+    width: 40rem;
+    height: 30rem;
+
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .project img {
-    height: 70%;
+    height: 90%;
     width: 100%;
 
     object-fit: cover;
     margin: 0;
 
-
     display: block;
 
-
-    border-radius: .3em;
+    border-radius: .5em;
 
     -webkit-filter: blur(0);
     filter: blur(0);
-    transition: filter 0.25s ease-in-out, -webkit-filter 0.25s ease-in-out, border-bottom 0.4s ease-in-out;
+    transition: filter 0.25s ease-in, -webkit-filter 0.25s ease-in-out, border-bottom 0.4s ease-in-out;
 
     cursor: pointer;
 }
@@ -145,9 +155,9 @@ hr {
 
 
 .project h1 {
-    margin: 0;
+    margin: 0rem;
 
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 600;
     color: var(--text_primary);
 
@@ -168,7 +178,6 @@ hr {
     height: 15%;
     font-size: 1.1rem;
 }
-
 
 
 .thicc {
