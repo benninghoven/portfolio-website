@@ -8,13 +8,13 @@
     --accent2: #1d2b4;
     --accent3: #183446;
     --text_primary: #FFFFFF;
-    --text_secondary: #FFF000;
+    --text_secondary: #d3d3d3;
 }
 
 
 body {
 
-    background: var(--background1);
+    background: var(--background2);
     color: var(--text_primary);
 
     margin: 0;
@@ -51,53 +51,63 @@ a:active {
     text-decoration: none;
 }
 
-hr {
-    border-top: 1px solid var(--accent2);
-}
+
+/* =-=-=-=-=-=-= NAVBAR =-=-=-=-=-= */
 
 .navbar {
-
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--background2);
 
+    background-color: var(--background1);
     z-index: 256;
 }
 
 .navbar ul{
     list-style-type: none;
+
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .navbar li {
-    float: left;
-}
+    float: inline-start;
+    text-align: center;
+    vertical-align: middle;
 
+}
 .navbar a { 
     display: block;
-    color: var(--text_primary);
+    color: var(--text_secondary);
     padding: 1rem 1rem;
+
     text-decoration: none;
-
-    height: 2rem;
+    transition: font-weight 200ms ease-in-out;
+    transition: font-color 200ms ease-in-out;
 }
+
 .navbar a:hover {
-    background-color: var(--accent2);
+    font-weight: 600;
+    color: var(--text_primary);
 }
 
 
 
-/* profile */
+/* =-=-=-=-=-= PROFILE =-=-=-=-=-=-=-= */
+
 .profile {
     text-align: center;
+    padding-top: 5rem;
 }
 
 .profile img {
-    width: 30rem;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: solid 5px var(--text_secondary);
+    border-radius: 15rem;
 }
+
 
 /* =-=-=-=-=-=-=-= PROJECT =-=-=-=-=-=-=-= */
 
@@ -189,7 +199,3 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: var(--accent);
-    text-decoration: none;
-}
