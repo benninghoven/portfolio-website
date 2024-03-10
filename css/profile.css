@@ -1,0 +1,14 @@
+/* =-=-=-=-=-= PROFILE =-=-=-=-=-=-=-= */
+
+.profile {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.profile img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: solid 5px var(--text_secondary);
+    border-radius: 15rem;
+}

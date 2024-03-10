@@ -1,0 +1,39 @@
+/* =-=-=-=-=-=-= NAVBAR =-=-=-=-=-= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: var(--background1);
+    z-index: 256;
+}
+
+.navbar ul{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: inline-start;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.navbar a { 
+    display: block;
+    color: var(--text_secondary);
+    padding: 1rem 1rem;
+
+    text-decoration: none;
+    transition: font-weight 200ms ease-in-out;
+    transition: font-color 200ms ease-in-out;
+}
+
+.navbar a:hover {
+    font-weight: 600;
+    color: var(--text_primary);
+}
