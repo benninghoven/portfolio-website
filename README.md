@@ -10,6 +10,6 @@ I'm a senior at California State University, Fullerton (CSUF), majoring in Compu
 
 Feel free to reach out to me if you have any questions or would like to connect!
 
-- [Email][devinbenninghoven@gmail.com](mailto:devinbenninghoven.com)
-- [LinkedIn](https://www.linkedin.com/in/devinbenninghoven/
-- [GitHub](https://github.com/benninghoven)
+- Email     (mailto:devinbenninghoven@gmail.com)
+- LinkedIn  (https://www.linkedin.com/in/devinbenninghoven/)
+- GitHub    (https://github.com/benninghoven/)
