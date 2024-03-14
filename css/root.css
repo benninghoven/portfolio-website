@@ -5,7 +5,7 @@
     --background2: #20252E;
     --accent1: #162034;
     --accent2: #1d2b4;
-    --accent3: #183446;
+    --accent3: #08F;
     --text_primary: #FFFFFF;
     --text_secondary: #d3d3d3;
 }
@@ -46,4 +46,8 @@ a:active {
     color: var(--text_primary);
     background-color: transparent;
     text-decoration: none;
+}
+
+footer {
+    text-align: center;
 }
