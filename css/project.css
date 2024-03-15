@@ -1,77 +1,23 @@
 .project-container {
-
-    display: inline-flex;
-    flex-direction: row;
-    flex-flow: row wrap;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-
-    margin-top: 2rem;
-    padding-top: 5rem;
-
-}
-
-.project {
-
-
-    margin: 5px;
-
-    width: 40rem;
-    height: 30rem;
-
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
-.project img {
-    height: 90%;
-    width: 100%;
-
-    object-fit: cover;
-    margin: 0;
-
-    display: block;
-
-    border-radius: .5em;
-
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    transition: filter 0.25s ease-in, -webkit-filter 0.25s ease-in-out, border-bottom 0.4s ease-in-out;
-
-    cursor: pointer;
-}
-
-.project img:hover {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-}
-
-
-.project img.clicked + p {
-    border-bottom-color: white; /* Change the color as needed */
-}
-
-
-.project h1 {
-    margin: 0rem;
-
-    font-size: 1.7em;
-    font-weight: 600;
-    color: var(--text_primary);
-
-    text-align: center;
-    vertical-align: middle;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 70%;
+    height: 25rem;
 
 }
 
-.project a {
-    color: var(--text_seconday);
-    text-align: left;
-    vertical-align: middle;
-    font-size: .9em;
-
+.project-title {
+    color: pink;
 }
 
-.project p {
-    height: 15%;
-    font-size: 1.1rem;
+.project-image {
+    width: 14rem;
+    height: 20rem;
+
 }
