@@ -29,6 +29,13 @@ video{
     border-radius: 1rem;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
 .project-image {
 
     width: auto;
@@ -45,8 +52,25 @@ video{
 p {
     font-size: 20px;
     color: var(--text_primary);
+    letter-spacing: 0.5px;
+
+}
 
 
+h1 {
+    text-align: center;
+    margin: 0;
+}
+.technologies-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--text_secondary);
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .line-break {

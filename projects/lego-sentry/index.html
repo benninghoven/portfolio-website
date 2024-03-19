@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>projects</title>
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/navbar.css">
+        <link rel="stylesheet" href="/css/project.css">
+
+        <!-- https://favicon.io/favicon-generator/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/projects">projects</a></li>
+            </ul>
+        </div>
+        <div style="height:4rem;"></div>
+
+
+        <div class="project-container">
+
+            <h1 class="project-title">Lego Sentry Powered by a Raspberry Pi</h1>
+            <div class="hr"></div>
+
+            <video autoplay muted loop src="/assets/videos/turret_video_00.mov"></video>
+
+            <div class="hr"></div>
+            <p>
+                Ever since I was a kid, I was fascinated by a mechanical sentry. 
+                Machines that would <i>look</i> at you, following your <i>every move</i>.
+                <br>
+                <br>
+                I needed a chassis that would able to handle the weight of the motors and move around with ease.
+                I managed to use LEGO Technic pieces to achieve this, and balanced the weight of the motors on the front and back of the chassis.
+                I limited the movement of the sentry to a 180 degree range, which was enough to track a person's face.
+                <br>
+                <br>
+                I needed to make a kickstand for the Pi, because the cable connected to the camera was too short to hide.
+                I balanced the Pi on two beams, that pressed into the Pi and held it in place.
+            </p>
+            <div class="hr"></div>
+            <img src="/assets/images/lego-sentry-other-side-shot.jpeg"></img>
+            <div class="hr"></div>
+            <h1> Equipment </h1>
+            <div class="hr"></div>
+                <ul class="technologies-list">
+                    <li><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4 Model B</a></li>
+                    <li><a href="https://www.raspberrypi.com/products/build-hat/"> LEGO build HAT</a></li>
+                    <li><a href="https://www.lego.com/en-us/product/medium-linear-motor-88008?consent-modal=show">LEGO Medium Linear Motor</a></li>
+                </ul>
+            <div class="hr"></div>
+
+            <img src="/assets/images/lego-sentry-profile.jpeg"></img>
+
+
+            <div class="hr"></div>
+            <h1> Software </h1>
+            <div class="hr"></div>
+            <p>
+                Python was the language I used to program the sentry. I used the OpenCV library to track faces. This was the easiest part of the project.
+            </p>
+
+
+        </div>
+
+        <footer>
+            <a href="/">© 2024 | Devin Benninghoven</a>
+        </footer>
+    </body>
+
+</html>
+
