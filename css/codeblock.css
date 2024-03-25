@@ -1,0 +1,18 @@
+.code-block {
+    background-color: var(--background1);
+    color: var(--text_secondary); /* Text color */
+    padding: 10px; /* Padding around the code block */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.code-block pre {
+    margin: 0;
+}
+
+.code-block pre code {
+    display: block;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Font for code */
+    white-space: pre-wrap; /* Preserve formatting */
+}
+
