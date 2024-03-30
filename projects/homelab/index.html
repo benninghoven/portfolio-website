@@ -5,17 +5,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>projects</title>
         <link rel="stylesheet" href="/css/root.css">
         <link rel="stylesheet" href="/css/navbar.css">
         <link rel="stylesheet" href="/css/project.css">
         <link rel="stylesheet" href="/css/codeblock.css">
+
+        <title>Projects | Homelab</title>
 
         <!-- https://favicon.io/favicon-generator/ -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
 
     </head>
 
@@ -32,38 +34,157 @@
 
         <div class="project-container">
 
-            <h1 class="project-title">Homelab</h1>
-
-
             <div class="hr"></div>
-            <p><b>Homelab</b> <i>[hom-læb](n):</i> a <em>laboratory</em> of (usually slightly outdated) technology in the domicile</p>
+            <h1>Homelab</h1>
+            <p><i>[hom-læb](n):</i> a <em>laboratory</em> of (usually slightly outdated) technology in the domicile</p>
             <div class="hr"></div>
-
-                                          
-            <div class="code-block">
-            <pre><code>
- _   _                      _       _     
-| | | |                    | |     | |    
-| |_| | ___  _ __ ___   ___| | __ _| |__  
-|  _  |/ _ \| '_ ` _ \ / _ \ |/ _` | '_ \ 
-| | | | (_) | | | | | |  __/ | (_| | |_) |
-\_| |_/\___/|_| |_| |_|\___|_|\__,_|_.__/ 
-            </code></pre>
-            </div>
 
             <img src="/assets/images/IMG_2951.JPG" alt="Homelab" class="project-image">
 
             <p> My current setup, as of 03/28/2024, consists of the following:</p>
+            <div class="hr"></div>
             <h2> Network Machines </h2>
             <ul> 
-                <li> <b>Modem</b> Some netgear modem? </li>
-                <li> <b>Router</b> 2019 Dell OptiPlex 3070 </li>
+                <li> <a href="#modem"><b>Modem: </b>Some Netgear Modem</a></li>
+                <li> <a href="#router"><b>Router: </b>Dell Optiplex 3070</a></li>
+                <li> <a href="#switch0"><b>Switch: </b>HP 2910al-8G-PoE</a></li>
                 <li> <b>Switch</b> TL-SG108E </li>
-                <li> <b>Switch</b> HP 2910al-48G-PoE (J9148A) </li>
                 <li> <b>Switch</b> 3 Dumb switches </li>
                 <li> <b>Access Point</b> U6-Lite 3 </li>
                 <li> <b>Access Point</b> UAP-AC-Pro </li>
+                <li> <a href="#unifi_controller"><b>UniFi Controller: </b>Raspberry Pi 4 CM4</a></li>
             </ul>
+
+            <div class="hr"></div>
+
+            <h2>  Host Machines </h2>
+            <ul> 
+                <li> <b>Proxmox Node:</b> Custom PC </li>
+                <li> <b>NAS Node:</b> Custom PC </li>
+                <li> <b>Proxmox Cluster:</b> Raspberry Pi 4 (4x) </li>
+            </ul>
+
+            <div class="hr"></div>
+
+            <h2> Network Software </h2>
+            <ul>
+                <li> pfSense </li>
+                <li> Unifi Controller </li>
+                <li> TailScale </li>
+                <li> PiHole </li>
+            </ul>
+
+            <div class="hr"></div>
+
+            <h2> Hosting Software </h2>
+            <ul>
+                <li> Proxmox </li>
+                <li> TrueNAS </li>
+                <li> Portainer </li>
+            </ul>
+
+            <div class="hr"></div>
+
+            <h2> Other </h2>
+            <ul>
+                <li> Home Assistant </li>
+                <li> Speedtest Tracker </li>
+                <li> Metabase </li>
+                <li> nextcloud </li>
+                <li> Glances </li>
+                <li> Homepage </li>
+                <li> AMP </li>
+                <li> Jellyfin </li>
+            </ul>
+
+
+
+
+
+
+            <div class="hr"></div>
+            <h2 id="modem"> Some Netgear Modem </h2>
+            <div class="hr"></div>
+
+            <p> ⚡️Average Power Consumption: Unknown </p>
+
+            <p>
+            I bought this modem because I did not want to rent one from my ISP.
+            I have had no issues so far.
+            I printed an enclosure for it to sit on my rack.
+            </p>
+
+            <img src="/assets/images/highlighted_modem.png" alt="Some Netgear Modem" class="project-image">
+
+
+
+
+            <div class="hr"></div>
+            <h2 id="router"> 2019 Dell Optiplex 3070 </h2>
+            <div class="hr"></div>
+
+            <p> ⚡️Average Power Consumption: Unknown </p>
+
+            <p> 
+            I got this machine from my internship on the summer of '22.
+            It was a workstation that was destined for the recycling bin.
+            I installed a NIC Intel PRO/1000 PT Dual Port Server Adapter in it
+            and turned it into a powerful PFSense router.
+            </p>
+
+            <img src="/assets/images/highlighted_router.png" alt="2019 Dell Optiplex 3070" class="project-image">
+
+
+
+
+            <div class="hr"></div>
+            <h2 id="switch0"> HP 2910al-48G-PoE Switch (J9148A) </h2>
+            <div class="hr"></div>
+            <ul>
+                <li> ⚡️Average Power Consumption: 90W </li>
+                <li> 48 Gigabit Ports </li>
+                <li> PoE Capable </li>
+                <li> Age: <i>Unknown</i> </li>
+            </ul>
+            <div class="hr"></div>
+
+            <p> 
+            I got this switch from my internship on the summer of '22. 
+            <br>
+            <br>
+            In it's previous life, it served as the main switch for a dentist's office.
+            <br>
+            <br>
+            It was getting replaced with a newer model, so I got to take it home.
+            <br>
+            <br>
+            As soon as it booted up, a loud fan noise filled the room. I quickly opened it up and replaced the fans with some Noctua NF-A4x20 fans.
+            The decibal level went from 58dB to under 32dB.
+            </p>
+            <img src="/assets/images/IMG_2774.JPG" alt="HP 2910al-48G-PoE Switch (J9148A)" class="project-image">
+
+
+            <div class="hr"></div>
+            <h2 id="unifi_controller"> Raspberry Pi CM4 </h2>
+            <div class="hr"></div>
+            <ul>
+                <li> ⚡️Average Power Consumption: ?? </li>
+                <li> Age: <i>2 years</i> </li>
+            </ul>
+
+            <p>
+            I followed this <a href="https://pimylifeup.com/rasberry-pi-unifi/">guide</a> to install the UniFi Controller on my Raspberry Pi CM4.
+            <br>
+            <br>
+            Why did I not just buy a Cloud Key? Because MONEY. A cloud key is very expensive for what it is, and a simple RPI can do the job perfectly.
+            Why a CM4? Because this was during the <i>great</i> Pi shortage of 2022, and I could not find a regular Pi 4. 
+            The CM4 is cooled with <a href="https://www.amazon.com/gp/product/B0C7BCWJBG/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1"> this case</a> from amazon.
+            This could just as well be inside of a virtual machine, but this is vital for the network to function, so I wanted it to be on a dedicated machine.
+            </p>
+
+
+
+
 
 
         </body>
@@ -74,3 +195,14 @@
 
 </html>
 
+            <div class="code-block">
+            <pre><code>
+            <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/minecraft.png" alt="minecraft-logo">
+ _   _                      _       _     
+| | | |                    | |     | |    
+| |_| | ___  _ __ ___   ___| | __ _| |__  
+|  _  |/ _ \| '_ ` _ \ / _ \ |/ _` | '_ \ 
+| | | | (_) | | | | | |  __/ | (_| | |_) |
+\_| |_/\___/|_| |_| |_|\___|_|\__,_|_.__/ 
+            </code></pre>
+            </div>
