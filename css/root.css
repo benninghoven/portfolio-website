@@ -8,12 +8,19 @@
     --accent3: #08F;
     --text_primary: #FFFFFF;
     --text_secondary: #d3d3d3;
+    --text_tertiary: #a0a0a0;
+    --text_quaternary: #808080;
+    --text_quinary: #606060;
+    --text_senary: #404040;
+    --text_septenary: #202020;
+    --link: #08F;
 }
 
 body {
-
     background: var(--background2);
     color: var(--text_primary);
+    margin: 0;
+
 
 
     font-family: "Open Sans", sans-serif;
@@ -24,10 +31,12 @@ body {
 }
 
 a:link {
-    color: var(--text_primary);
-    background-color: transparent;
-    text-decoration: none;
+    color: var(--link);
 } 
+
+p:link {
+    color: var(--text_primary);
+}
 
 a:visited {
     color: var(--text_primary);
