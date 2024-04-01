@@ -17,25 +17,33 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
+        <script>
+        fetch('/html/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('importedNavbar').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+        fetch('html/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('importedFooter').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+        </script>
+
     </head>
 
     <body>
-
-        <div class="navbar">
-            <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="/projects">projects</a></li>
-            </ul>
-        </div>
-        <div style="height:4rem;"></div>
-
+        <div id="importedNavbar"></div>
 
         <div class="project-container">
 
+            <div class="hr"></div>
             <h1 class="project-title">Lego Sentry Powered by a Raspberry Pi</h1>
             <div class="hr"></div>
 
-            <video autoplay muted loop src="/assets/videos/turret_video_00.mov"></video>
+            <img class="project-image" src="/assets/images/lego-tracker.JPG" alt="Lego Sentry">
 
             <div class="hr"></div>
             <p>
@@ -49,6 +57,11 @@
                 <br>
                 I created kickstand for the Pi by balancing it on two beams that pressed into the Pi and held it in place.
             </p>
+
+            <div class="hr"></div>
+
+            <video autoplay muted loop src="/assets/videos/turret_video_00.mov"></video>
+
             <div class="hr"></div>
             <img src="/assets/images/lego-sentry-other-side-shot.jpeg"></img>
             <div class="hr"></div>
@@ -78,9 +91,7 @@
 
         </div>
 
-        <footer>
-            <a href="/">© 2024 | Devin Benninghoven</a>
-        </footer>
+        <div id="importedFooter"></div>
     </body>
 
 </html>

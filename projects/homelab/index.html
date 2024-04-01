@@ -21,16 +21,24 @@
 
     </head>
 
+    <script>
+        fetch('/html/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('importedNavbar').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+         fetch('/html/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('importedFooter').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+    </script>
+
+
     <body>
-
-        <div class="navbar">
-            <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="/projects">projects</a></li>
-            </ul>
-        </div>
-        <div style="height:4rem;"></div>
-
+        <div id="importedNavbar"></div>
 
         <div class="project-container">
 
@@ -183,27 +191,7 @@
             This could just as well be inside of a virtual machine, but this is vital for the network to function, so I wanted it to be on a dedicated machine.
             </p>
 
-
-
-
-
+            <div id="importedFooter"></div>
 
         </body>
-        <footer>
-            <a href="/">© 2024 | Devin Benninghoven</a>
-        </footer>
-    </body>
-
 </html>
-
-            <div class="code-block">
-            <pre><code>
-            <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/minecraft.png" alt="minecraft-logo">
- _   _                      _       _     
-| | | |                    | |     | |    
-| |_| | ___  _ __ ___   ___| | __ _| |__  
-|  _  |/ _ \| '_ ` _ \ / _ \ |/ _` | '_ \ 
-| | | | (_) | | | | | |  __/ | (_| | |_) |
-\_| |_/\___/|_| |_| |_|\___|_|\__,_|_.__/ 
-            </code></pre>
-            </div>

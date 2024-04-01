@@ -16,29 +16,34 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
+    <script>
+    fetch('../html/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('importedNavbar').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching external HTML:', error));
+    fetch('../html/footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('importedFooter').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching external HTML:', error));
+    </script>
 </head>
 
 <body>
 
-    <div class="navbar">
-        <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/projects">projects</a></li>
-        </ul>
-    </div>
-
-    <div style="height:4rem;"></div>
+    <div id="importedNavbar"></div>
 
     <div class="project-container">
 
-
-
         <div class="project">
             <a href="/projects/homelab/">
-                <h2> Ongoing </h2>
-                <img src="/assets/images/homelab-01.jpg">
-                <h1> HomeLab </h1>
-                <p> A collection of network equipment and servers that I orchestrate and maintain focused on open source software.</p>
+                <h2> Present </h2>
+                <img src="/assets/images/homelab-01.JPG">
+                <h1> Homelab </h1>
+                <p> Network equipment working alongside with servers that host my own applications.</p>
             </a>
         </div>
 
@@ -89,9 +94,7 @@
 
     </div>
 
-    <footer>
-        <a href="/">© 2024 | Devin Benninghoven</a>
-    </footer>
+    <div id="importedFooter"></div>
 
 </body>
 

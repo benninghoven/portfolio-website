@@ -20,30 +20,37 @@
 
     </head>
 
+    <script>
+        fetch('/html/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('importedNavbar').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+        fetch('/html/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('importedFooter').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+    </script>
+
     <body>
 
-        <div class="navbar">
-            <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="/projects">projects</a></li>
-            </ul>
-        </div>
-        <div style="height:4rem;"></div>
-
+        <div id="importedNavbar"></div>
 
         <div class="project-container">
 
             <h1 class="project-title">Home Lab</h1>
             <div class="hr"></div>
+            <img class="project-image" src="/assets/images/roblox-game-00.png" alt="Home Lab">
             <p>
-                This is the heart of the system
+                ROBLOX
             </p>
             <div class="hr"></div>
 
-        <footer>
-            <a href="/">© 2024 | Devin Benninghoven</a>
-        </footer>
-    </body>
+        <div id="importedFooter"></div>
 
+    </body>
 </html>
 
