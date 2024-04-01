@@ -26,16 +26,14 @@
     fetch('../html/footer.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('importedFooter').innerHTML = html;
+            document.getElementById('importedAbsoluteFooter').innerHTML = html;
         })
         .catch(error => console.error('Error fetching external HTML:', error));
     </script>
 </head>
 
-<body>
-
     <div id="importedNavbar"></div>
-
+<body>
     <div class="project-container">
 
         <div class="project">
@@ -94,7 +92,7 @@
 
     </div>
 
-    <div id="importedFooter"></div>
+    <div id="importedAbsoluteFooter"></div>
 
 </body>
 

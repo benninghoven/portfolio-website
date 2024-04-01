@@ -35,12 +35,9 @@
 }
 
 .navbar a:hover {
-    font-weight: 600;
     color: var(--text_primary);
     background-color: var(--background1);
-    transition: font-color 200ms ease-in-out;
-    transition: font-weight 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

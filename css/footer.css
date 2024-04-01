@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    background-color: var(--background2);
+    padding: 1rem;
+}
+
+.footer p {
+    text-align: center;
+    size: 1.5rem;
+    color: var(--text_secondary);
+}
+
+.absolute-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--background2);
+}
+
+.absolute-footer p {
+    text-align: center;
+    size: 1.5rem;
+    color: var(--text_secondary);
+}

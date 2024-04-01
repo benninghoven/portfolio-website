@@ -21,10 +21,10 @@
             document.getElementById('importedNavbar').innerHTML = html;
         })
         .catch(error => console.error('Error fetching external HTML:', error));
-    fetch('html/footer.html')
+    fetch('html/absolute_footer.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('importedFooter').innerHTML = html;
+            document.getElementById('importedAbsoluteFooter').innerHTML = html;
         })
         .catch(error => console.error('Error fetching external HTML:', error));
     </script>
@@ -38,9 +38,8 @@
     <div class="container">
         <img class="profile-pic" src="/assets/images/headshot_by_logan_corrente.jpeg" alt="Profile picture">
         <div class="info">
-            <h1>Hey I'm Devin Benninghoven</h1>
-            <p>Currently studying computer science at California State University, Fullerton.</p>
-            <p><img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/tux.png" alt="Linux Logo"> Aspring Linux Wizard</p>
+            <h1>Hey I'm Devin!</h1>
+            <p class="status">Currently studying computer science at California State University, Fullerton.</p>
             <div class="socials">
                 <a href="https://github.com/benninghoven" target="_blank">
                     <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/github-light.png" alt="Github Logo">
@@ -50,11 +49,12 @@
                 </a>
                 <a href="https://wakatime.com/@benninghoven" target="_blank">
                     <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wakatime-light.png" alt="Twitter Logo">
+                </a>
             </div>
         </div>
     </div>
 
-    <div id="importedFooter"></div>
+    <div id="importedAbsoluteFooter"></div>
 
 </body>
 </html>

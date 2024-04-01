@@ -5,16 +5,14 @@
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    padding-top: 0;
-    margin-top: 0;
-
     justify-content: center;
+    padding-top: 1rem;
 }
 
 
 .project {
     width: calc(30% - 10px);
+    min-width: 35rem;
     height: 30rem;
 
     margin-left: 5px;
@@ -31,14 +29,6 @@
 
 }
 
-@media (max-width: 768px) {
-    .project {
-        width: 100%; /* Full width on smaller screens */
-    }
-    .project img {
-        border: red 1px solid;
-    }
-}
 
 .project a {
     text-decoration: none;
@@ -114,4 +104,11 @@ h2 {
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Full width on smaller screens */
+        min-width: 0;
+    }
 }
