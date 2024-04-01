@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Devin Benninghoven | Home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin Benninghoven | Home</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <!-- https://favicon.io/favicon-generator/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-        <link rel="stylesheet" href="/css/root.css">
-        <link rel="stylesheet" href="/css/navbar.css">
-        <link rel="stylesheet" href="/css/profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#navbar-placeholder").load("/html/navbar.html");
+        });
+    </script>
+</head>
 
-        <!-- https://favicon.io/favicon-generator/ -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    </head>
-
-    <body>
-
-
-        <navbar class="navbar"> 
-                <ul>
-                    <li><a href="/">home</a></li>
-                    <li><a href="/projects/">projects</a></li>
-                </ul>
-        </navbar>
-
-
-        <div class="profile">
-            <img src="/assets/images/headshot_by_logan_corrente.jpeg"></img>
-            <p>
-                Hello! 👋
-                <br>
-                <br>
-                I'm Devin, currently an undergraduate student at CSU Fullerton, 
-                where I'm pursuing a Bachelor of Science in Computer Science.
-            </p>
-        </div>
-
-
-        <footer>
-            <a href="/">© 2024 | Devin Benninghoven</a>
-        </footer>
-
-    </body>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="profile">
+        <img src="/assets/images/headshot_by_logan_corrente.jpeg" alt="Headshot">
+        <p>
+            Hello! 👋
+            <br><br>
+            I'm Devin, currently an undergraduate student at CSU Fullerton, 
+            where I'm pursuing a Bachelor of Science in Computer Science.
+        </p>
+    </div>
+    <footer>
+        <a href="/">© 2024 | Devin Benninghoven</a>
+    </footer>
+</body>
 </html>
 

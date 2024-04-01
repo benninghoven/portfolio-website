@@ -1,63 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 
 :root {
-    --background1: #151922;
-    --background2: #20252E;
-    --accent1: #162034;
-    --accent2: #1d2b4;
+    --background1: #1e1e1e;
+    --background2: #191919;
+
+    --accent1: #acbbe6;
+    --accent2: #718bd4;
     --accent3: #08F;
+
     --text_primary: #FFFFFF;
     --text_secondary: #d3d3d3;
-    --text_tertiary: #a0a0a0;
-    --text_quaternary: #808080;
-    --text_quinary: #606060;
-    --text_senary: #404040;
-    --text_septenary: #202020;
-    --link: #08F;
+
+    --weight: 600;
 }
 
 body {
-    background: var(--background2);
-    color: var(--text_primary);
     margin: 0;
-
-
-
+    background: var(--background1);
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+    color: var(--text_primary);
+}
+
+
+p {
+    font-family: "Noticia Text", serif;
 }
 
 a:link {
-    color: var(--link);
+    color: var(--accent2);
 } 
 
-p:link {
-    color: var(--text_primary);
-}
-
 a:visited {
-    color: var(--text_primary);
-    background-color: transparent;
-    text-decoration: none;
+    color: var(--accent2);
 }
 
 a:hover {
-    color: var(--accent2);
-    background-color: transparent;
-    text-decoration: none;
+    color: var(--accent1);
 }
 
-a:active {
-    color: var(--text_primary);
-    background-color: transparent;
-    text-decoration: none;
-}
+
 
 footer {
     margin-top: 2rem;
     margin-bottom: .5rem;
     text-align: center;
+}
+
+footer a:link {
+    color: var(--text_seconaary);
+}
+
+footer a:visited {
+    color: var(--text_secondary);
+}
+
+footer a:hover {
+    color: var(--text_primary);
 }

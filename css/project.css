@@ -50,10 +50,9 @@ img {
 }
 
 p {
+    font-weight: 400;
     font-size: 20px;
     color: var(--text_primary);
-    letter-spacing: 0.5px;
-
 }
 
 

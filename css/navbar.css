@@ -4,22 +4,24 @@
     position: fixed;
     top: 0;
     width: 100%;
-
-    background-color: var(--background1);
+    background-color: var(--background2);
     z-index: 256;
 }
 
 .navbar ul{
     list-style-type: none;
-
-    margin: 0;
-    padding: 0;
+    overflow: hidden;
 }
 
 .navbar li {
     float: inline-start;
     text-align: center;
     vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    
+    width: 25%;
+    border: 1px solid var(--text_primary);
 
 }
 
