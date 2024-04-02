@@ -1,24 +1,59 @@
 .footer {
     width: 100%;
     background-color: var(--background2);
-    padding: 1rem;
-}
-
-.footer p {
-    text-align: center;
-    size: 1.5rem;
-    color: var(--text_secondary);
+    padding-top: 1rem;
 }
 
 .absolute-footer {
     width: 100%;
+    background-color: var(--background2);
+    padding-top: 1rem;
+
     position: absolute;
     bottom: 0;
-    background-color: var(--background2);
+}
+
+
+.footer p {
+    text-align: center;
+    color: var(--text_secondary);
+
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
 .absolute-footer p {
     text-align: center;
-    size: 1.5rem;
     color: var(--text_secondary);
 }
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--text_secondary);
+    text-align: center;
+    margin: 0 1rem; /* Add some space between social icons */
+    display: flex;
+    align-items: center;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.socials img {
+    height: 2rem;
+}
+
+.socials p {
+    margin: 0;
+    padding-left: 0.5rem;
+}
+

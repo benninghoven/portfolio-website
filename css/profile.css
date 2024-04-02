@@ -1,6 +1,5 @@
 :root {
-    --mobile_rem_width: 16rem;
-    --mobile_font_size: 1.1rem;
+    --mobile_rem_width: 17rem;
 }
 
 .container {
@@ -48,14 +47,6 @@
     text-decoration: none;
 }
 
-.socials {
-    padding-top: 2rem;
-    text-align: center;
-}
-
-.socials a {
-    margin-right: 1rem;
-}
 
 @media (max-width: 768px) {
     .container {
@@ -63,6 +54,7 @@
         padding: 0;
         margin: 0;
         align-items: center;
+        padding-top: 2rem;
     }
 
     .profile-pic {
