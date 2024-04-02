@@ -1,19 +1,9 @@
 .project-container {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 65%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
     background-color: var(--background2);
 }
 
-@media (max-width: 375px) { /* Adjust the breakpoint to your desired mobile screen size */
-    .project-container {
-        width: 100%; /* Set the width to 100% for mobile devices */
-    }
-}
 
 video{
     width: 100%;
@@ -63,4 +53,10 @@ ul {
 li {
     font-size: 20px;
     color: var(--text_primary);
+}
+
+@media (max-width: 375px) { /* Adjust the breakpoint to your desired mobile screen size */
+    .project-container{
+        margin: 0;
+    }
 }

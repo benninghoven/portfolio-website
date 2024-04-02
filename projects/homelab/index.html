@@ -23,12 +23,6 @@
     </head>
 
     <script>
-        fetch('/html/navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('importedNavbar').innerHTML = html;
-            })
-            .catch(error => console.error('Error fetching external HTML:', error));
          fetch('/html/footer.html')
             .then(response => response.text())
             .then(html => {
@@ -40,7 +34,6 @@
 
     <body>
         <a class="back_button" href="/projects/"><- Projects</a>
-
         <div class="project-container">
 
             <div class="hr"></div>

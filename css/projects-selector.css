@@ -112,8 +112,12 @@
         min-width: 0;
     }
 
-    .project img {
-        width: 100%;
-        margin: 0;
+    .page-container {
+        margin: 0 auto;
     }
+
+    .project-container {
+        width: 100%;
+    }
+
 }
