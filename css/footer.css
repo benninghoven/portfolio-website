@@ -1,36 +1,23 @@
 .footer {
     width: 100%;
     background-color: var(--background2);
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    position: relative;
 }
-
-.absolute-footer {
-    width: 100%;
-    background-color: var(--background2);
-    padding-top: 1rem;
-
-    position: absolute;
-    bottom: 0;
-}
-
 
 .footer p {
     text-align: center;
     color: var(--text_secondary);
-
     margin: 0;
-    padding-bottom: 1rem;
-}
-
-.absolute-footer p {
-    text-align: center;
-    color: var(--text_secondary);
 }
 
 
 .socials {
     display: flex;
-    justify-content: center;
 }
 
 .socials a {
@@ -39,17 +26,17 @@
     margin: 0 1rem; /* Add some space between social icons */
     display: flex;
     align-items: center;
+    padding-bottom: 0.5rem;
 }
 
 .socials a:hover {
     p {
-        border-bottom: 1px solid var(--text_primary);
         color: var(--text_primary);
     }
 }
 
 .socials img {
-    height: 2rem;
+    height: 1rem;
     width: auto;
 }
 

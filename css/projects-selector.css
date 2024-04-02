@@ -2,6 +2,10 @@
     --border-radius: .5rem;
 }
 
+.body {
+    margin: 0;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
@@ -101,10 +105,6 @@
     margin: 0;
 }
 
-.project:hover p {
-    color: var(--text_primary);
-    transition: color 0.25s ease-in;
-}
 
 @media (max-width: 768px) {
     .project {

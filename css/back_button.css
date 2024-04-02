@@ -1,0 +1,19 @@
+.back_button {
+    color: var(--text_secondary);
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 80%;
+    margin: 0 auto;
+
+    padding: 1rem 0;
+
+}
+
+
+.back_button:hover {
+    color: var(--text_primary);
+    transition: color 200ms;
+}

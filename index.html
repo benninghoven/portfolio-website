@@ -21,10 +21,10 @@
             document.getElementById('importedNavbar').innerHTML = html;
         })
         .catch(error => console.error('Error fetching external HTML:', error));
-    fetch('html/absolute_footer.html')
+    fetch('html/footer.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('importedAbsoluteFooter').innerHTML = html;
+            document.getElementById('importedFooter').innerHTML = html;
         })
         .catch(error => console.error('Error fetching external HTML:', error));
     </script>
@@ -43,7 +43,9 @@
         </div>
     </div>
 
-    <div id="importedAbsoluteFooter"></div>
+    <div style="position: absolute;bottom: 0;width:100%">
+        <div id="importedFooter"></div>
+    </div>
 
 </body>
 </html>

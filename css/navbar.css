@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     z-index: 256;
-    background-color: var(--background2);
+    background-color: var(--background1);
 }
 
 .navbar ul {
@@ -23,7 +23,6 @@
 .navbar a { 
     display: block;
     color: var(--text_secondary);
-    height: 3.5rem;
     font-size: 1.5rem;
     font-weight: 400;
 
@@ -32,12 +31,12 @@
     transition: font-color 200ms ease-in-out;
 
     line-height: 3.5rem;
+    border-bottom: 2px solid var(--text_secondary);
 }
 
 .navbar a:hover {
-    color: var(--text_primary);
-    background-color: var(--background1);
-    text-decoration: underline;
+    background-color: var(--background2);
+    transition: background-color 200ms ease-in-out;
 }
 
 @media (max-width: 768px) {

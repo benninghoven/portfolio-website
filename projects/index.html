@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/projects-selector.css">
+    <link rel="stylesheet" href="/css/back_button.css">
 
     <!-- https://favicon.io/favicon-generator/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -17,12 +17,6 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
     <script>
-    fetch('../html/navbar.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('importedNavbar').innerHTML = html;
-        })
-        .catch(error => console.error('Error fetching external HTML:', error));
     fetch('../html/footer.html')
         .then(response => response.text())
         .then(html => {
@@ -32,10 +26,9 @@
     </script>
 </head>
 
-<div id="importedNavbar"></div>
-
 <body>
 
+    <a class="back_button" href="/"><- Home</a>
     <div class="page-container">
 
         <h1 class="page-title"> Projects </h1>
@@ -82,10 +75,10 @@
             <div class="project">
                 <a href="/projects/skygame/">
                     <h2 class="date"> 2023 </h2>
-                    <img src="/assets/images/skygame-beta00.png">
+                    <img src="/assets/images/celularatomatacavegen.png">
                     <div class="project-info">
                         <h1> Sky Game </h1>
-                        <p>Using C# and Monogame, this game is a 2D platformer with cave generation.</p>
+                        <p>Using C# and Monogame, this game is a 2D platformer with cellular automata cave generation.</p>
                     </div>
                 </a>
             </div>
