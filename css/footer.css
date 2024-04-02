@@ -31,29 +31,30 @@
 .socials {
     display: flex;
     justify-content: center;
-    margin-top: 0;
-    padding: 0;
 }
 
 .socials a {
     text-decoration: none;
     color: var(--text_secondary);
-    text-align: center;
     margin: 0 1rem; /* Add some space between social icons */
     display: flex;
     align-items: center;
 }
 
 .socials a:hover {
-    text-decoration: underline;
+    p {
+        border-bottom: 1px solid var(--text_primary);
+        color: var(--text_primary);
+    }
 }
 
 .socials img {
     height: 2rem;
+    width: auto;
 }
 
 .socials p {
-    margin: 0;
-    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0;
 }
 
